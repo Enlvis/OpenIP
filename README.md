@@ -1,4 +1,4 @@
-# 🔗 OpenIP
+<h1 align="center">🔗 OpenIP</h1>
 
 <div align="center">
 Zaawansowane narzędzie z grupy "OpenWeb" do sprawdzania sieci prywatnych.
@@ -6,7 +6,7 @@ Zaawansowane narzędzie z grupy "OpenWeb" do sprawdzania sieci prywatnych.
 
 ---
 
-## ⚠️ Uwaga
+<h2 align="center">⚠️ Uwaga</h2>
 
 **Stosuj wyłącznie na wyznaczonej lub specjalnej sieci, która jest przeznaczona dla tego typu testów.** [3]
 
@@ -14,7 +14,7 @@ Użycie tego narzędzia na sieciach, do których nie masz autoryzacji, może by�
 
 ---
 
-## 📋 Spis treści
+<h2 align="center">📋 Spis treści</h2>
 
 - [O projekcie](#-o-projekcie)
 - [Wymagania](#-wymagania)
@@ -25,13 +25,13 @@ Użycie tego narzędzia na sieciach, do których nie masz autoryzacji, może by�
 
 ---
 
-## 📖 O projekcie
+<h2 align="center">📖 O projekcie</h2>
 
 OpenIP to potężne narzędzie do analizy i testowania sieci prywatnych, będące częścią pakietu "OpenWeb". Program umożliwia przeprowadzanie zaawansowanych testów bezpieczeństwa i diagnostyki sieci w kontrolowanym środowisku. [3]
 
 ---
 
-## 🔧 Wymagania
+<h2 align="center">🔧 Wymagania</h2>
 
 - **Python 3.8+**
 - System operacyjny: Windows, Linux lub macOS
@@ -39,7 +39,7 @@ OpenIP to potężne narzędzie do analizy i testowania sieci prywatnych, będąc
 
 ---
 
-## 📥 Instalacja
+<h2 align="center">📥 Instalacja</h2>
 
 ### 1. Instalacja Pythona
 
@@ -62,7 +62,7 @@ python --version
 Kliknij zielony przycisk code oraz znajdź na dole okienka przycisk **"Download .zip"**
 Wypakuj plik .zip do folderu download na Windows/Linux i przenieś plik OPEN-IP.py do katalogu domowego "C://User/user"
 
-## 🚀 Użycie
+<h2 align="center">🚀 Użycie</h2>
 
 ### Uruchomienie w terminalu
 
@@ -95,9 +95,19 @@ net
 info
 ```
 
+### PrintScreen
+
+![help](./img/help.png)
+![info](./img/info.png)
+![ping](./img/ping.png)
+![scan](./img/scan/basic.png)
+![scanfull](./img/scan/full.png)
+![scanfast](./img/scan/fast.png)
+![net](./img/net.png)
+
 ---
 
-## ✨ Funkcje
+<h2 align="center">✨ Funkcje</h2>
 
 - 🔍 **Skanowanie sieci** - Wykrywanie aktywnych hostów w sieci
 - 🔐 **Analiza portów** - Identyfikacja otwartych portów i usług
@@ -105,7 +115,7 @@ info
 
 ---
 
-## 📄 Licencja
+<h2 align="center">📄 Licencja</h2>
 
 Ten projekt jest udostępniony bez licencji.
 
