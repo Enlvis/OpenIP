@@ -2,7 +2,7 @@
 #  EDU ONLY – tylko własne sieci
 # -------------------------------------------------------
 #  Name  : OPENIP
-#  Author: Anonymus
+#  Author: Enlvis
 # -------------------------------------------------------
 
 import socket, subprocess, platform, sys, time, threading, errno
@@ -25,6 +25,7 @@ CLOSED=f"{RED}[CLOSED]{RESET}"
 FILTERED=f"{YELLOW}[FILTERED]{RESET}"
 INFO=f"{CYAN}[*]{RESET}"
 WARN=f"{YELLOW}[!]{RESET}"
+ERR=f"{RED}[ERROR]{RESET}"
 
 br="-"*60
 
@@ -92,8 +93,10 @@ def ping_ip(host, attempts):
     return alive
 
 def get_hostname(ip):
-    try: return socket.gethostbyaddr(ip)[0]
-    except: return "unknown"
+    try:
+        return socket.gethostbyaddr(ip)[0]
+    except:
+        return "unknown"
 
 def guess_os(ip):
     opt="-n" if platform.system()=="Windows" else "-c"
@@ -102,7 +105,8 @@ def guess_os(ip):
         if "ttl=64" in out: return "Linux / Unix"
         if "ttl=128" in out: return "Windows"
         if "ttl=255" in out: return "Router"
-    except: pass
+    except:
+        pass
     return "Unknown"
 
 # ================= AUTO TUNING =================
@@ -254,7 +258,7 @@ def network_info():
 
 # ================= BANNER =================
 print(f"""
-{GREEN} 
+{GREEN}
  ███████╗ ██████╗ ███████╗███╗   ██╗  ██╗██████╗
  ██╔══██║ ██╔══██╗██╔════╝████╗  ██║  ██║██╔══██╗
  ██║  ██║ ██████╔╝█████╗  ██╔██╗ ██║  ██║██████╔╝
@@ -273,20 +277,14 @@ while True:
             print(br)
             print("                   Podstawowe polecenia")
             print(br)
-            print("help - Polecenia na wywołanie tłumaczenia poleceń")
-            print("info - Pokazuje dane sieci")
-            print("exit - Wyjście z programu")
-            print(" ")
-            print(" ")
+            print("help - Lista poleceń")
+            print("info - Informacje o sieci")
+            print("exit - Wyjście")
             print(br)
-            print("                       Narzędzia IP")
-            print(br)
-            print("scan - zakres portów")
-            print("scan fast - Skanuje topowe porty")
-            print("scan full - Skanuje porty: 1-65535")
-            print("net - Skan sieć ip.1-24")
-            print(" ")
-            print(" ")
+            print("scan - Zakres portów")
+            print("scan fast - Top porty")
+            print("scan full - 1-65535")
+            print("net - Skan sieci /24")
 
         elif cmd=="ping":
             ip=input("IP > ")
@@ -294,7 +292,7 @@ while True:
             print(f"\n{OK} HOST AKTYWNY" if ping_ip(ip,n) else f"\n{ERR} BRAK ODPOWIEDZI")
 
         elif cmd=="net":
-            prefix=input("Prefix (np. 192.168.1) > ")
+            prefix=input("Prefix > ")
             scan_network(prefix)
 
         elif cmd=="scan":
@@ -313,7 +311,7 @@ while True:
 
         elif cmd=="info":
             i=network_info()
-            print(f"{INFO} IP: {i['ip']}  GATEWAY: {i['gateway']}")
+            print(f"{INFO} IP: {i['ip']}")
 
         elif cmd=="exit":
             sys.exit()
@@ -322,4 +320,5 @@ while True:
             print(f"{WARN} Nieznana komenda")
 
     except KeyboardInterrupt:
-        print("\nPrzerwano"); sys.exit()
+        print("\nPrzerwano")
+        sys.exit()
