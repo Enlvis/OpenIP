@@ -1,16 +1,18 @@
 <h1 align="center">🔗 OpenIP</h1>
 
 <div align="center">
-Zaawansowane narzędzie z grupy "OpenWeb" do sprawdzania sieci prywatnych.
+Zaawansowane narzędzie do analizy i testowania sieci prywatnych.<br>
+Projekt edukacyjny (EDU).
 </div>
 
 ---
 
 <h2 align="center">⚠️ Uwaga</h2>
 
-**Stosuj wyłącznie na wyznaczonej lub specjalnej sieci, która jest przeznaczona dla tego typu testów.** [3]
+<strong>Używaj wyłącznie na sieciach, które posiadasz lub na które masz wyraźną zgodę.</strong>
 
-Użycie tego narzędzia na sieciach, do których nie masz autoryzacji, może być nielegalne i wiązać się z konsekwencjami prawnymi.
+Nieautoryzowane skanowanie sieci może być nielegalne i prowadzić do konsekwencji prawnych.  
+Autor nie ponosi odpowiedzialności za niewłaściwe użycie narzędzia.
 
 ---
 
@@ -27,27 +29,31 @@ Użycie tego narzędzia na sieciach, do których nie masz autoryzacji, może by�
 
 <h2 align="center">📖 O projekcie</h2>
 
-OpenIP to potężne narzędzie do analizy i testowania sieci prywatnych, będące częścią pakietu "OpenWeb". Program umożliwia przeprowadzanie zaawansowanych testów bezpieczeństwa i diagnostyki sieci w kontrolowanym środowisku. [3]
+**OpenIP** to narzędzie do diagnostyki i analizy sieci prywatnych.  
+Pozwala na wykrywanie aktywnych hostów, skanowanie portów oraz podstawowe
+rozpoznawanie usług działających w sieci.
+
+Projekt ma charakter **edukacyjny** i służy do nauki bezpieczeństwa sieci
+w kontrolowanym środowisku.
 
 ---
 
 <h2 align="center">🔧 Wymagania</h2>
 
 - **Python 3.8+**
-- System operacyjny: Windows, Linux lub macOS
-- Uprawnienia administratora
+- Windows / Linux / macOS
+- (Opcjonalnie) uprawnienia administratora
 
 ---
 
 <h2 align="center">📥 Instalacja</h2>
 
-### 1. Instalacja Pythona
+### 1️⃣ Instalacja Pythona
 
-Pobierz i zainstaluj Python ze strony oficjalnej:
+Pobierz Python z oficjalnej strony:  
+👉 https://www.python.org/downloads/
 
-👉 [Python.org/downloads](https://www.python.org/downloads/) [1]
-
-Podczas instalacji upewnij się, że zaznaczono opcję **"Add Python to PATH"**.
+Podczas instalacji zaznacz opcję **Add Python to PATH**.
 
 ### 2. Weryfikacja instalacji
 
