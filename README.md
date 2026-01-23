@@ -96,6 +96,7 @@ info
 ```
 
 ### PrintScreen
+-# *Uwaga niektóre zrzuty ekranu są w wersji demo dla prywatności twórcy*
 
 ![help](./img/help.png)
 ![info](./img/info.png)
