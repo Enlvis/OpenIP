@@ -41,7 +41,7 @@ w kontrolowanym środowisku.
 <h2 align="center">🔧 Wymagania</h2>
 
 - **Python 3.8+**
-- Windows / Linux / macOS
+- Linux **(Program działa tylko na systemie LInux)**
 - (Opcjonalnie) uprawnienia administratora
 
 ---
