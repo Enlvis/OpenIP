@@ -280,6 +280,10 @@ while True:
             print("help - Lista poleceń")
             print("info - Informacje o sieci")
             print("exit - Wyjście")
+            print(" ")
+            print(" ")
+            print(br)
+            print("                      Narzędzia IP")
             print(br)
             print("scan - Zakres portów")
             print("scan fast - Top porty")
@@ -322,3 +326,4 @@ while True:
     except KeyboardInterrupt:
         print("\nPrzerwano")
         sys.exit()
+
